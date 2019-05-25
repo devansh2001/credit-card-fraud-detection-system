@@ -18,8 +18,6 @@ VALID = dataset[dataset['Class'] == 0]
 
 outlier_fraction = len(FRAUD) * 1.0 / len(VALID)
 
-# correlation_matrix = dataset.corr()
-
 columns = dataset.columns.tolist()
 columns = [col for col in columns if col not in ['Class']]
 
